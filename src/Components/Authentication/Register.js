@@ -12,7 +12,7 @@ const Register = () => {
   };
   return (
     <React.Fragment>
-      <Grid container direction="column" spacing={2} justify="center" alignItems="stretch" style={{ textAlign: "center", height: "99vh" }}>
+      <Grid container direction="column" spacing={2} justify="center" alignItems="stretch" style={{ textAlign: "center", height: "99vh", padding: 10 }}>
         <Grid item>
           <Typography variant="h3" color="textSecondary">
             Circle
