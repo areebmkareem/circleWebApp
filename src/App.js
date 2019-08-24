@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
-import Login from "./Components/Authentication/Login";
-import Home from "./Components/Home";
-import Playground from "./Components/playground";
+import { Grid } from "@material-ui/core";
+import Register from "./Components/Authentication/Register";
 
-function App() {
-  return <Playground />;
-}
+const App = () => {
+  return (
+    <Grid container direction="row" justify="center">
+      <Grid item xs={12} md={8} style={{ padding: 10 }}>
+        <Register></Register>
+      </Grid>
+    </Grid>
+  );
+};
 
 export default App;
