@@ -3,6 +3,7 @@ import Stories from "../Stories/Stories";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import { Home as HomeIcon, AccountCircle, RadioButtonUncheckedTwoTone } from "@material-ui/icons";
 import Circles from "../Circles";
+import Profile from "../Profile/Profile";
 
 const Home = () => {
   const [value, setValue] = React.useState(1);
@@ -10,7 +11,7 @@ const Home = () => {
     <React.Fragment>
       {value === 0 && <Circles></Circles>}
       {value === 1 && <Stories></Stories>}
-
+      {value === 2 && <Profile />}
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {

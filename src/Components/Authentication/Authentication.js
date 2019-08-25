@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { registerUser } from "../../Store/actions/Authentication";
+import { registerUser, loginUser } from "../../Store/actions/Authentication";
 
 const Login = ({ handleOnchange }) => {
   return (
@@ -77,6 +77,7 @@ const mapsStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    OnLoginUser: data => dispatch(loginUser(data)),
     OnRegisterUser: data => dispatch(registerUser(data))
   };
 };
